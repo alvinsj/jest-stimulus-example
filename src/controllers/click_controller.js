@@ -10,5 +10,6 @@ export default class ClickController extends Controller {
   click(e) {
     e.preventDefault();
     this.descriptionTarget.textContent = 'Submitting...';
+    this.element.form.submit();
   }
 }

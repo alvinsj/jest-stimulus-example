@@ -31,11 +31,7 @@ describe('SorterController', () => {
   });
 
   describe('clicks to submit form', () => {
-    var formSubmit = jest.fn();
-
     beforeAll(() => {
-      document.querySelector('form').addEventListener('submit', formSubmit);
-      // mocking form.submit
       document.querySelector('[data-action="click#click"]').click();
     });
 
